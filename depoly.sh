@@ -4,7 +4,7 @@ npm run stop
 rm * -rf
 
 # 拷贝新文件
-cp ../dist/* -R
+cp -r ../dist  ./
 cp ../package.json ./
 cp ../depoly.sh ./
 cp ../pm2.json ./
