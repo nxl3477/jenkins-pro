@@ -7,10 +7,10 @@ pwd
 ls -al
 
 # 拷贝新文件
-cp -r ../dist  ./
-cp ../package.json ./
-cp ../depoly.sh ./
-cp ../pm2.json ./
+cp -f ../temp/*  ./dist
+cp ../temp/package.json ./
+cp ../temp/depoly.sh ./
+cp ../temp/pm2.json ./
 
 
 # 安装依赖
