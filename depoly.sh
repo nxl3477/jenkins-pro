@@ -3,6 +3,9 @@ npm run stop
 # 移除旧文件
 rm * -rf
 
+pwd
+ls -al
+
 # 拷贝新文件
 cp -r ../dist  ./
 cp ../package.json ./
