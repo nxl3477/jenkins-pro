@@ -1,20 +1,17 @@
-cd ./publish
-# 停止 pm2 服务
+# 停止服务
 npm run stop
-
-cd ..
 # 移除旧文件
-rm ./publish/* -rf
+rm * -rf
 
 # 拷贝新文件
-cp ./dist/*  ./publish
-cp ./package.json ./publish
-cp ./pm2.json ./publish
-cp ./depoly.sh ./publish
+cp ../dist/* -R
+cp ../package.json ./
+cp ../depoly.sh ./
+cp ../pm2.json ./
 
-cd ./publish
+
 # 安装依赖
 cnpm install 
 
-# 开启 pm2 服务
+# 开启服务
 npm run start:prod
