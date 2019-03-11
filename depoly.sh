@@ -8,7 +8,7 @@ ls -al
 
 # 拷贝新文件
 mkdir dist
-cp -f ../temp/*  ./dist
+cp -rf ../temp/dist  ./dist
 cp ../temp/package.json ./
 cp ../temp/depoly.sh ./
 cp ../temp/pm2.json ./
