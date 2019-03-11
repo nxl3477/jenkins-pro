@@ -1,18 +1,23 @@
+
+cd ../publish
 # 停止服务
 npm run stop
 # 移除旧文件
-rm * -rf
+cd ..
 
-pwd
-ls -al
+rm -rf publish
+ 
+mkdir publish
+
 
 # 拷贝新文件
 mkdir dist
-cp -rf ../temp/dist  ./dist
-cp ../temp/package.json ./
-cp ../temp/depoly.sh ./
-cp ../temp/pm2.json ./
+cp -rf ./temp/dist  ./publish
+cp ./temp/package.json ./publish
+cp ./temp/depoly.sh ./publish
+cp ./temp/pm2.json ./publish
 
+cd publish
 
 # 安装依赖
 cnpm install 
