@@ -7,6 +7,7 @@ pwd
 ls -al
 
 # 拷贝新文件
+mkdir dist
 cp -f ../temp/*  ./dist
 cp ../temp/package.json ./
 cp ../temp/depoly.sh ./
